@@ -5,12 +5,11 @@ import { useState, useEffect, useContext, useCallback, useRef, useMemo } from "r
 import { findProgramAddressSync, findProgramAddress } from '@project-serum/anchor/dist/cjs/utils/pubkey'
 import { utf8 } from '@project-serum/anchor/dist/cjs/utils/bytes'
 import Texasprogram from './Texasprogram';
-import DataContext from '../../context/Dataprovider';
 import {PublicKey} from '@solana/web3.js'
 import GetPDA from './GetPDA';
 
 
-import idl from '../../idl/idl.json';
+import idl from '../../../idl/idl.json';
 import { useAnchorWallet, useConnection, useWallet } from '@solana/wallet-adapter-react'
 const { SystemProgram } = anchor.web3; // Added to initialize account
 const TODO_PROGRAM_PUBKEY = "BrCcvB8c2d59n3h66WBrFT6ufsbydnohWMbmquwBpuB8"

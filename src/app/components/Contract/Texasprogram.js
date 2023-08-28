@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAnchorWallet, useConnection, useWallet } from '@solana/wallet-adapter-react'
 import * as anchor from '@project-serum/anchor'
-import idl from '../../idl/idl.json';
+import idl from '../../../idl/idl.json';
 import { useMemo } from "react";
 import { Connection, Keypair, clusterApiUrl } from "@solana/web3.js";
 import { mont } from 'bn.js';

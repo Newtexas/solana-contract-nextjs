@@ -1,7 +1,7 @@
-import React from 'react'
+"use client";
+import React from 'react';
 import styled from "styled-components";
 import { useState, useEffect, useContext, useCallback, useRef, useMemo } from "react";
-import DataContext from '../../context/Dataprovider';
 import Texasprogram from './Texasprogram';
 import Select from 'react-select';
 import AsyncSelect from 'react-select/async';
@@ -104,7 +104,8 @@ width: 100%;
 
 
 export default function Chaindata() {
-    const { walletstatus, walletkey} = useContext(DataContext)
+    const walletstatus = 1;
+    const walletkey = 1;
     const [selectedOption, setSelectedOption] = useState(null);
     const program = Texasprogram();
 

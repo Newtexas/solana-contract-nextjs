@@ -5,7 +5,6 @@ import { useState, useEffect, useContext, useCallback, useRef, useMemo } from "r
 import { findProgramAddressSync } from '@project-serum/anchor/dist/cjs/utils/pubkey'
 import { utf8 } from '@project-serum/anchor/dist/cjs/utils/bytes'
 import Texasprogram from './Texasprogram';
-import DataContext from '../../context/Dataprovider';
 import {PublicKey} from '@solana/web3.js'
 
 const { SystemProgram } = anchor.web3; // Added to initialize account
