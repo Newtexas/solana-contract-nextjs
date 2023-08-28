@@ -1,10 +1,19 @@
-import Image from 'next/image'
-
+import Setglobal from './styles/Setglobal';
+import { ContentBoxFrame } from './styles/Frame';
 
 export default function Home() {
   return (
-    <main>
- <h1>dikkie</h1>
+  
+    <main>       
+
+    
+    <Setglobal />
+
+
+    <ContentBoxFrame>
+
+    </ContentBoxFrame>
+
     </main>
   )
 }

@@ -1,0 +1,48 @@
+{
+  "version": "0.1.0",
+  "name": "ntxcore",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        { "name": "userAccount", "isMut": true, "isSigner": true },
+        { "name": "signer", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [{ "name": "name", "type": "string" }]
+    },
+    {
+      "name": "setdata",
+      "accounts": [{ "name": "userAccount", "isMut": true, "isSigner": false }],
+      "args": [{ "name": "name", "type": "string" }]
+    },
+    {
+      "name": "increment",
+      "accounts": [{ "name": "userAccount", "isMut": true, "isSigner": false }],
+      "args": []
+    },
+    {
+      "name": "decrement",
+      "accounts": [{ "name": "userAccount", "isMut": true, "isSigner": false }],
+      "args": []
+    },
+    {
+      "name": "update",
+      "accounts": [{ "name": "userAccount", "isMut": true, "isSigner": false }],
+      "args": [{ "name": "data", "type": "u64" }]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "UserAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "data", "type": "u64" },
+          { "name": "name", "type": "string" },
+          { "name": "authority", "type": "publicKey" }
+        ]
+      }
+    }
+  ]
+}
