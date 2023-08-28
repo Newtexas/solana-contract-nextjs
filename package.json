@@ -1,0 +1,36 @@
+{
+  "name": "contract-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "0.15.34",
+    "@solana/wallet-adapter-react-ui": "^0.9.33",
+    "@solana/wallet-adapter-wallets": "^0.19.20",
+    "@solana/web3.js": "^1.78.4",
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "assert": "^2.0.0",
+    "axios": "^1.5.0",
+    "file-system": "^2.2.2",
+    "next": "^13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "^0.72.4",
+    "react-native-fs": "^2.20.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "styled-components": "^6.0.7",
+    "web-vitals": "^3.4.0"
+  }
+}
