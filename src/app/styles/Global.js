@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { createGlobalStyle, keyframes } from "styled-components";
 
