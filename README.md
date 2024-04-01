@@ -39,3 +39,8 @@ git branch -M main
 git push -u origin main
 
 git remote add origin https://github.com/Newtexas/solana-contract-nextjs.git
+
+git add .
+git commit -m "first commit"
+git branch -M boiler
+git push -u origin boiler
